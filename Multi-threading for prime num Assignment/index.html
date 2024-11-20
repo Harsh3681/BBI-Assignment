@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multithreading in JavaScript</title>
+</head>
+<body>
+    <h1>Prime Number Calculator</h1>
+
+    <label>
+        Calculate primes up to: 
+        <input id="limit" type="number" value="1000000">
+    </label>
+    <br><br>
+
+    <label for="threads">Select number of threads: </label>
+    <select id="threads">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+    </select>
+    <br><br>
+
+    <button id="singleThreadBtn">Run Single-Threaded</button>
+    <button id="multiThreadBtn">Run Multi-Threaded</button>
+    <button id="cancelBtn" disabled>Cancel Operation</button>
+    <br><br>
+
+    <progress id="progressBar" value="0" max="100" style="width: 100%;"></progress>
+    <p id="output"></p>
+
+    <script src="main.js"></script>
+    <script src="sharedFile.js"></script>
+</body>
+</html>
